@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Resume Builder</h1>
+    </header>
+    <main>
+        <section id="personal-details">
+            <h2>Personal Details</h2>
+            <form id="personal-details-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </form>
+        </section>
+
+        
+        <section id="summary">
+            <h2>Summary</h2>
+            <textarea id="summary-text" rows="4"></textarea>
+        </section>
+
+        <section id="template-choice">
+            <h2>Template Choices</h2>
+            <select id="template-select">
+                <option value="modern">Modern</option>
+                <option value="traditional">Traditional</option>
+                <option value="creative">Creative</option>
+            </select>
+        </section>
+
+        <section id="live-preview">
+            <h2>Live Preview</h2>
+            <div id="preview-container"></div>
+        </section>
+
+        <section id="format-choices">
+            <h2>Format Choices</h2>
+            <label><input type="checkbox" name="format" value="pdf"> PDF</label>
+            <label><input type="checkbox" name="format" value="docx"> DOCX</label>
+            <label><input type="checkbox" name="format" value="txt"> TXT</label>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

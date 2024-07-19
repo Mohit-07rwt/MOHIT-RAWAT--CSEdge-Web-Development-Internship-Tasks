@@ -1,0 +1,112 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #f4cf14;
+    background-color: #292626;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.intro p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.timeline, .quotes {
+    margin-bottom: 2rem;
+}
+
+.timeline h2, .quotes h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2e9c2e;
+}
+
+.timeline ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.timeline ul li {
+    background: #2a2828;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #272525;
+}
+
+.quotes blockquote {
+    background: #222020;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 4px solid #333;
+    font-style: italic;
+    color: #dddd0f;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .timeline h2, .quotes h2 {
+        font-size: 1.5rem;
+    }
+
+    .timeline ul li, .quotes blockquote {
+        font-size: 0.9rem;
+    }
+}
